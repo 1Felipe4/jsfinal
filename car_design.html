@@ -1,0 +1,37 @@
+
+<html>
+  <head>
+    <title>BMW</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <nav id="na">
+    <a href="index.html"><p>Series</p></a>
+    <a href="car_design.html"><p id="here" >Design </p></a>
+    <a><p>Exterior </p></a>
+    <a><p>Interior </p></a>
+    <a><p>Options</p></a>
+    <a><p>Accessories</p></a>
+    <a><p>Summary</p></a>
+    </nav>
+<section>
+  <img id="dPic"/>
+  <aside id= "design">
+    <h4>Design Options</h4>
+    <a href = #dPic>
+    <button class="option"id="d1" onclick="changeDesign(x.designOptions()[0])"> <p id="d1D"></p><p id="d1P"></p></button>
+    <button class="option" id="d2" onclick="changeDesign(x.designOptions()[1])"><p id="d2D"></p><p id="d2P"></p> </button>
+    </a>
+
+    <a href="car_exterior.html"><button disabled id="cExterior" onclick="x.cookie()">Next</button></a>
+    <p id="selected"></p>
+  </aside>
+</section>
+
+<section>
+<p>Design your ultimate driving machine. Choose Your Look<p>
+<section>
+  <script src="script.js" onload="designPage();"> </script>
+      </body>
+</html>

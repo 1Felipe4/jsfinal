@@ -1,0 +1,65 @@
+
+<html>
+  <head>
+    <title>BMW</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+
+  <body>
+    <nav id="na">
+    <a href="index.html"><p>Series</p></a>
+    <a href="car_design.html"><p>Design </p></a>
+    <a href="car_exterior"><p id="here">Exterior </p></a>
+    <a><p>Interior </p></a>
+    <a><p>Options</p></a>
+    <a><p>Accessories</p></a>
+    <a><p>Summary</p></a>
+    </nav>
+    <section id="modal" class ="modal">
+
+      <section id="added" class="modal-content">
+        <h4>Added</h4>
+        <p id= "ad1" class="modal-content"></p>
+        <p id="ad2" class="modal-content"></p>
+      </section>
+      <section id="same" class="modal-content">
+        <h4>Unchanged</h4>
+        <p id= "sa1" class="modal-content"></p>
+        <p id= "sa2" class="modal-content"></p>
+      </section>
+      <section id="removed" class="modal-content">
+        <h4>Removed</h4>
+        <p id= "re1" class="modal-content"></p>
+        <p id="re2" class="modal-content"></p>
+       </section>
+       <a href ="car_interior.html"><section class="close modal-content" onclick="x.cookie()">Next</section></a>
+       <section class="close modal-content">&times;</section>
+    </section>
+
+    <section>
+      <img id="cPic"/>
+      <aside id= "color">
+        <h4>Color Options</h4>
+        <a href  = #cPic>
+        <button class="option" id="c1" onclick="changeColor(x.colorOptions()[0])"><p id="c1D"></p><p id="c1P"></p></button>
+        <button class="option" id="c2" onclick="changeColor(x.colorOptions()[1])"><p id="c2D"></p><p id="c2P"></p> </button>
+        <button class="option" id= "c3"onclick="changeColor(x.colorOptions()[2])"><p id="c3D"></p><p id="c3P"></p></button></a>
+        <a href = "car_design.html"><button>Previous</button></a>
+      </aside>
+
+
+      <aside id= "rim">
+        <h4>Rim Options</h4>
+        <a href  = #cPic>
+        <button class="option" id="r1" onclick="changeRim(x.rimOptions()[0])"> <p id="r1D"></p><p id="r1P"></p></button>
+        <button class="option" id="r2" onclick="changeRim(x.rimOptions()[1])"> <p id="r2D"></p><p id="r2P"></p></button>
+        <button class="option" id= "r3" onclick="changeRim(x.rimOptions()[2])"> <p id="r3D"></p><p id="r3P"></p></button></a>
+        <a><button id="modalBtn">Next</button></a>
+      </aside>
+    </section>
+
+  <script src="script.js" onload ="exteriorPage()"> </script>
+
+      </body>
+</html>

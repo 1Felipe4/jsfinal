@@ -1,0 +1,40 @@
+
+<html>
+  <head>
+    <title>BMW</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+
+  <body>
+    <nav id="na">
+    <a href="index.html"><p>Series</p></a>
+    <a href="car_design.html"><p>Design </p></a>
+    <a href="car_exterior.html"><p>Exterior </p></a>
+    <a href="car_interior.html"><p id="here">Interior </p></a>
+    <a><p>Options</p></a>
+    <a><p>Accessories</p></a>
+    <a><p>Summary</p></a>
+    </nav>
+
+    <section>
+      <img id="iPic"/>
+      <aside id= "interior">
+        <h4>Interior Options</h4>
+        <a href  = #iPic>
+        <button class="option" id="in1" onclick="changeInterior(x.interiorOptions()[0])"><p id="n1D"></p><p id="n1P"> </button>
+        <button class="option" id="in2" onclick="changeInterior(x.interiorOptions()[1])"><p id="n2D"></p><p id="n2P"> </button>
+        <button class="option" id= "in3" onclick="changeInterior(x.interiorOptions()[2])"><p id="n3D"></p><p id="n3P"> </button></a>
+        <a href ="car_options.html" disabled  id="cOptions"  onclick="x.cookie()"> <button>Next</button> </a>
+        <p id="selected"> </p>
+
+      </aside>
+    </section>
+
+    <section id="options"> </section>
+
+
+  <script src="script.js" onload ="interiorPage()"> </script>
+
+      </body>
+</html>

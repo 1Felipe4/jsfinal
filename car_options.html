@@ -1,0 +1,66 @@
+
+<html>
+  <head>
+    <title>BMW</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+
+  <body>
+
+    <nav id="na">
+    <a href = "index.html"><p>Series</p></a>
+    <a href ="car_design.html"><p>Design </p></a>
+    <a href ="car_exterior.html"><p>Exterior </p></a>
+    <a href ="car_interior.html"><p>Interior </p></a>
+    <a href ="car_options"><p id="here">Options</p></a>
+    <a><p>Accessories</p></a>
+    <a><p>Summary</p></a>
+    </nav>
+
+    <section class= "car-options" onclick="changeOption('c')">
+      <h3 class ="oName"> </h3>
+      <p class="oDisplay"></p>
+      <ul class="oPerks"> </ul>
+      <p class="oPrice"> </p>
+    </section>
+
+    <section class= "car-options" onclick="changeOption('p')">
+      <h3 class ="oName"> </h3>
+      <p class="oDisplay"></p>
+      <ul class="oPerks"> </ul>
+      <p class="oPrice"> </p>
+    </section>
+
+    <section class= "car-options" onclick="changeOption('e')">
+      <h3 class ="oName"> </h3>
+      <p class="oDisplay"></p>
+      <ul class="oPerks"> </ul>
+      <p class="oPrice"> </p>
+    </section>
+    <a><button id="modalBtn">Next</button></a>
+
+    <section id="modal" class ="modal">
+
+      <section id="added" class="modal-content">
+        <h4>Added</h4>
+        <p id= "ad1" class="modal-content"></p>
+      </section>
+      <section id="same" class="modal-content">
+        <h4>Unchanged</h4>
+        <p id= "sa1" class="modal-content"></p>
+      </section>
+      <section id="removed" class="modal-content">
+        <h4>Removed</h4>
+        <p id= "re1" class="modal-content"></p>
+        <p id="re2" class="modal-content"></p>
+       </section>
+       <section class="close modal-content" onclick="x.cookie()"><a href ="car_accessories.html">Next</a></section>
+       <section class="close modal-content">&times;</section>
+    </section>
+
+    <p id="selected"> </p>
+  <script src="script.js" onload ="optionsPage()"> </script>
+
+      </body>
+</html>

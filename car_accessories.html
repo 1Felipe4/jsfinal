@@ -1,0 +1,43 @@
+
+<html>
+  <head>
+    <title>BMW</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+
+  <body>
+
+    <nav id="na">
+    <a href ="index.html"><p>Series</p></a>
+    <a href="car_design.html"><p>Design </p></a>
+    <a href="car_exterior.html"><p>Exterior </p></a>
+    <a href="car_interior.html"><p>Interior </p></a>
+    <a href="car_options.html"><p>Options</p></a>
+    <a href="car_accessories.html"><p id="here">Accessories</p></a>
+    <a><p>Summary</p></a>
+    </nav>
+
+    <section>
+      <nav id="acc">
+        <button id="a" onclick="accessory('all')">All</button>
+        <button id="n" onclick="accessory('interior')"> Interior</button>
+        <button id="W" onclick="accessory('wheels')"> Wheels</button></nav>
+      <section>
+      <button class="interior option" id="ac1" onclick="selectAcc('ac1')"></button>
+      <button class="interior option" id="ac2" onclick="selectAcc('ac2')"></button>
+      <button class="interior option" id="ac3" onclick="selectAcc('ac3')"></button>
+      <button class="interior option" id="ac4" onclick="selectAcc('ac4')"></button>
+      <button class="wheels option" id="ac5" onclick="selectAcc('ac5')"></button>
+      </section>
+      <a href="summary.html"><button onclick="x.cookie()">Next</button></a>
+    </section>
+
+
+
+
+
+  <script src="script.js" onload ="accessoryPage()"> </script>
+
+      </body>
+</html>
